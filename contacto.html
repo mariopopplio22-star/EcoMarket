@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <title>EcoMarket</title>
+  </head>
+  <body>
+    <div id = "titulo">
+    <h1>EcoMarket</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="novedades.html">Novedades</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="terminos.html">Términos</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="form-container">
+    <h2>Formulario de Compra - EcoMarket</h2>
+    <form class="row g-3 justify-content-center" action="cliente.php" method="POST">
+      <div class="col-md-10">
+        <label for="validationServer01" class="form-label">Nombres:</label>
+        <input type="text" class="form-control is-valid" id="validationServer01" name="txtNom" required>
+      </div>
+
+      <div class="col-md-10">
+        <label for="validationServer02" class="form-label">Apellidos:</label>
+        <input type="text" class="form-control is-valid" id="validationServer02" name="txtApe" required>
+      </div>
+
+      <div class="col-md-10">
+        <label for="validationServerUsername" class="form-label">Email:</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend3">@</span>
+          <input type="email" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" name="txtEma" required>
+        </div>
+      </div>
+
+      <div class="col-md-10">
+        <label for="validationServer03" class="form-label">Ciudad:</label>
+        <input type="text" class="form-control is-invalid" id="validationServer03" name="txtCiu" required>
+      </div>
+
+      <div class="col-md-10">
+        <label for="validationServer04" class="form-label">Producto:</label>
+        <select class="form-select is-invalid" id="validationServer04" name="txtPro" required>
+          <option selected disabled value="">Elige tu producto...</option>
+          <option>Manzana</option>
+          <option>Plátano</option>
+          <option>Naranja</option>
+          <option>Sandía</option>
+        </select>
+      </div>
+
+      <div class="col-md-10">
+        <div class="form-check">
+          <input class="form-check-input is-invalid" type="checkbox" id="invalidCheck3" required>
+          <label class="form-check-label" for="invalidCheck3">
+            Acepta los términos y condiciones
+          </label>
+        </div>
+      </div>
+
+      <div class="col-md-10 text-center">
+        <input type="submit" class="btn btn-primary" value="Comprar">
+      </div>
+    </form>
+  </div>
+
+    <footer>
+    &copy; 2025 EcoMarket - Todos los derechos reservados
+  </footer>
+
+
+  </body>
+</html>
