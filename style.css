@@ -255,3 +255,14 @@ footer {
     font-size: 14px;
   }
 }
+
+#imgventa{
+  width: 98%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-primary{
+  cursor: pointer;
+}
